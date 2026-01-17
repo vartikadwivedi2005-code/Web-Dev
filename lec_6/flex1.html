@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #parent{
+            background-color: white;
+            border: 2px solid black;
+            height: 80vh;
+            width: 80vw;
+            display: flex;
+             justify-content: center; 
+             align-items: center; 
+            /* height: 100vh; */
+            /* justify-content: space-around; */
+             /* justify-content: space-between; */
+             /* justify-content: space-evenly; */
+            /* justify-self: start; */
+            /* justify-items: baseline; */
+            /* align-items: center; */
+            /* align-items: end; */
+           
+        }
+        #parent div{
+            border: 1px solid white;
+            width: 100px;
+            height: 100px;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent div:nth-of-type(1){
+            background-color:  rgb(105, 105, 76);
+
+        }
+        #parent div:nth-of-type(2){
+            background-color:  rgb(76, 105, 90);
+
+        }
+        #parent div:nth-of-type(3){
+            background-color: rgb(76, 76, 105);
+
+        }
+        #parent div:nth-of-type(4){
+            background-color:  rgb(105, 76, 100);
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">Flexbox</h2>
+    <div id="parent">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+</html>
