@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body{
+            background-color: pink;
+            
+            
+        }
+        #parent{
+            background-color: white;
+            border: 2px solid black;
+            height: 80vh;
+            width: 80vw;
+            display: flex;
+             justify-content: center; 
+             align-items: center; 
+            /* height: 100vh; */
+            /* justify-content: space-around; */
+             /* justify-content: space-between; */
+             /* justify-content: space-evenly; */
+            /* justify-self: start; */
+            /* justify-items: baseline; */
+            /* align-items: center; */
+            /* align-items: end; */
+           
+        }
+        #parent div{
+            border: 1px solid white;
+            width: 100px;
+            height: 100px;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent div:nth-of-type(1){
+            background-color:  rgb(76, 76, 105);
+
+        }
+        #parent div:nth-of-type(2){
+            background-color:  rgb(76, 76, 105);
+
+        }
+        #parent div:nth-of-type(3){
+            background-color: rgb(76, 76, 105);
+
+        }
+        #parent div:nth-of-type(4){
+            background-color:  rgb(76, 76, 105);
+        }
+        #parent div:nth-of-type(5){
+            background-color:  rgb(76, 76, 105);
+        }
+        #parent div:nth-of-type(6){
+            background-color:  rgb(76, 76, 105)
+        }
+        #parent div:nth-of-type(7){
+            background-color: rgb(76, 76, 105)
+        }
+        #parent div:nth-of-type(8){
+            background-color: rgb(76, 76, 105)
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">Flexbox Parent Properties Demo</h2>
+    <div id="parent">
+        <div id="child1">1</div>
+        <div id="child2">2</div>
+        <div id="child3">3</div>
+        <div id="child4">4</div>
+        <div id="child5">5</div>
+        <div id="child6">6</div>
+        <div id="child7">7</div>
+        <div id="child8">8</div>
+    </div>
+    
+</body>
+</html>
