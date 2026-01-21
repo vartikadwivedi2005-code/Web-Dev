@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #bla {
+        height: 200px;
+        width: 200px;
+        background-color: pink;
+        border: 10px solid pink;
+        border-radius: 50%;
+        margin-left: 47%;
+       animation-name: bounce;
+       animation-direction: alternate;
+       animation-duration: 600ms ;
+       animation-timing-function: ease-in;
+       animation-iteration-count:infinite ;
+    }
+    #bla img{
+        border-radius: 50%;
+      
+    }
+    @keyframes bounce{
+        0%{
+            transform: translateY(0px);
+
+        }
+        100%{
+            transform: translateY(85vh) rotate(360deg);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="bla">
+         <img height="200px" width="200px" border-radius:50% src="https://tse1.mm.bing.net/th/id/OIP.rgy-cGKJgbz1IZsORnoaXQHaIN?rs=1&pid=ImgDetMain&o=7&rm=3"/>
+    </div>
+</body>
+</html>
