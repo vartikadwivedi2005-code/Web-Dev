@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: rebeccapurple;
+            height: 200px;
+            width: 300px;
+            animation-name: any;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+           /* animation-delay: 3s; */
+           /* animation-direction: alternate; */
+           /* animation-play-state: paused; */
+            /* transition: 3s; */
+        } 
+        div:hover{
+            animation-play-state: running;
+        } 
+        @keyframes any {
+            0%{
+                background-color: red;
+                height: 400px;
+                width: 400px;
+                border-radius: 40px;
+            }
+            25%{
+                background-color: gold;
+                height: 100vh;
+                width: 50vw;
+            }
+            50%{
+                background-color: aquamarine;
+                height: 10px;
+                width: 40px;
+            }
+            100%{
+                background-color: aliceblue;
+                height: 100vh;
+                width: 100vw;
+                border-radius: 50%;
+            }
+            
+        }
+        /* div:hover{
+            background-color: greenyellow;
+        } */
+    </style>
+</head>
+<body>
+    <h2>animationssss</h2>
+    <div>
+
+    </div>
+</body>
+</html>
