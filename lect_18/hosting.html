@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <!-- 
+      The browser parses the HTML from top to bottom. 
+      When it hits a <script> tag, it pauses HTML parsing 
+      to fetch and execute the JS file.
+    -->
+
+    <!-- 
+      Currently commented out:
+      If active, 'loop.js' would create its own Global Execution Context 
+      before 'hosting.js' starts.
+    -->
+    <!-- <script src="loop.js"></script> -->
+
+    <!-- 
+      1. The browser loads 'hosting.js'.
+      2. The JS Engine creates the Global Execution Context (GEC).
+      3. Hoisting occurs (Memory Phase) for all variables/functions in hosting.js.
+      4. The code is executed line-by-line (Execution Phase).
+    -->
+    <script src="hosting.js"></script>
+</body>
+</html>
