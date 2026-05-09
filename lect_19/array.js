@@ -17,7 +17,6 @@ console.log(data);
 
 let DATA=arr.find((a)=>{
     console.log(a);
-    
 })
 
 //foreach never return anything only undefine is return
