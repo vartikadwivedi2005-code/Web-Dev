@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    /* border-color: black; */
+    /* border: black solid 2px; */
+   width: fit-content;
+   
+}
+
+#calculation{
+     background-color: aliceblue;
+}
+
+#btns{
+    background-color: cornsilk;
+}
+
+input{
+    height: 20vh;
+    width: 98%;
+    /* border: solid black 2px; */
+}
+
+button{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.lastRight{
+    background-color: orange;
+}
+
+.top{
+    background-color: white;
+}
+.num{
+    background-color: gray;
+}
