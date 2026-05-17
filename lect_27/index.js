@@ -16,4 +16,4 @@ setInterval(function(){     // set interval is used to call a function or evalua
     img.setAttribute('src', arr[num]);    // set attribute is used to set the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise, a new attribute is added with the specified name and value.
     num = (num + 1) % arr.length;    // this is used to loop through the array of images. It increments the num variable by 1 and then takes the modulus with the length of the array to ensure that it wraps around to the beginning of the array when it reaches the end.
 
-} ,200);
+} ,100);
