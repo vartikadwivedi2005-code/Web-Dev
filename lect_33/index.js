@@ -1,0 +1,5 @@
+localStorage.setItem('name', 'John');    //localstorage is used to store data in the browser, it can store data in key-value pairs and it is persistent, meaning that the data will not be deleted when the browser is closed. It can be accessed using JavaScript and it has a maximum storage limit of around 5MB per domain. It is commonly used for storing user preferences, session data, and other small pieces of information that need to be retained across page reloads or browser sessions.
+let data= localStorage.getItem('name');  //getItem is used to retrieve the value of a key from localstorage, it takes the key as an argument and returns the corresponding value. If the key does not exist, it returns null.
+// console.log(data);
+localStorage.removeItem('name');    //removeItem is used to remove a key-value pair from localstorage, it takes the key as an argument and removes the corresponding key-value pair from localstorage. If the key does not exist, it does nothing.
+console.log(data);
