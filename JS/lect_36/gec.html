@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execution Context Demo</title>
+</head>
+<body>
+    <script>
+        // 1. GLOBAL EXECUTION CONTEXT (GEC) is created here.
+        // Phase 1 (Memory): JS allocates memory for 'name' and 'greet'.
+        // Phase 2 (Execution): 'name' is assigned "Gemini".
+        
+        var name = "Gemini";
+
+        function greet(user) {
+            // 2. FUNCTION EXECUTION CONTEXT (FEC) is created when greet() is called.
+            // It has its own memory space for arguments and local variables.
+            var message = "Hello, " + user;
+            console.log(message);
+        }
+
+        // Calling the function pushes a new context onto the Call Stack.
+        greet(name);
+
+        /* 
+           THE ANATOMY OF AN EXECUTION CONTEXT:
+           ---------------------------------------------------
+           | Memory Component (Variable Environment)         |
+           | - key: value (e.g., name: undefined)            |
+           | - function code stored in its entirety          |
+           ---------------------------------------------------
+           | Code Component (Thread of Execution)            |
+           | - Code is executed line by line                 |
+           ---------------------------------------------------
+        */
+
+        // Note: GEC is only created ONCE. 
+        // Subsequent script files or functions create their own distinct contexts.
+    </script>
+</body>
+</html>
