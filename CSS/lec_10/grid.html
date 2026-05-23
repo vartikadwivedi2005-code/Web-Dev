@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            
+            border: 3px solid;
+            height:800px;
+            display:grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 200px 200px 200px;
+            padding: 10px;
+            /* grid-auto-flow: column; */
+
+        }
+        .child{
+          background-color: rgb(67, 112, 135);
+          border: 1px solid bisque;
+        }
+         
+        #one{
+            background-color: rgb(145, 204, 50);
+            /* grid-row-start: 2;
+            grid-row-end: 3; */
+        }
+        #two{
+            background-color: greenyellow;
+            /* grid-column-start: 2;
+            grid-column-end: 3; */
+        }
+        #three{
+            background-color: rgb(140, 157, 163);
+        }
+        #four{
+            background-color: pink;
+        }
+        #five{
+            background-color: deepskyblue;
+        }
+        #six{
+            background-color: lightcoral;
+        }
+        #seven{
+            background-color: gold;
+        }
+        #eight{
+            background-color: darkviolet;
+        }
+        #nine{
+            background-color: hotpink;
+        }
+        #ten{
+            background-color: lavender;
+        }
+        #eleven{
+            background-color: lemonchiffon;
+        }
+        #twelve{
+            background-color: peachpuff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" id="one">1</div>
+        <div class="child" id="two">2</div>
+        <div class="child" id="three">3</div>
+        <div class="child" id="four">4</div>
+        <div class="child" id="five">5</div>
+        <div class="child" id="six">6</div>
+        <div class="child" id="seven">7</div>
+        <div class="child" id="eight">8</div>
+        <div class="child" id="nine">9</div>
+        <div class="child" id="ten">10</div>
+        <div class="child" id="eleven">11</div>
+        <div class="child" id="twelve">12</div>
+    </div>
+</body>
+</html>

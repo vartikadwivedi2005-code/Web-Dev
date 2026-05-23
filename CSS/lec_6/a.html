@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        #navbar {
+            background-color: black;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .nav-center {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #ddd;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="navbar">
+        <a>Portfolio</a>
+        <div class="nav-center">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Cart</a>
+        </div>
+        
+       
+        <div class="nav-right">
+            <a href="#">Profile</a>
+            <button>Login</button>
+        </div>
+    </div>
+
+   
+    <div style="padding: 20px;">
+        <h3 color>Creation of NavBar</h3>
+    </div>
+
+</body>
+</html>
